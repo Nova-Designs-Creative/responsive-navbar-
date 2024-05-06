@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link To JS -->
+    <script src="index.js" defer></script>
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="navbar-brand">
+        <img src="logo.png" alt="logo" />
+      </a>
+
+      <i class="fa-solid fa-bars open-btn"></i>
+
+      <div class="menu menu-active">
+        <a href="/" class="link-hover">Home</a>
+        <a href="/" class="link-hover">Portfolio</a>
+
+        <!-- #Services Dropdown -->
+        <div class="services-dropdown">
+          <div class="dropdown-title">
+            <p class="link-hover">Services</p>
+            <i class="fa-solid fa-caret-up"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="/" class="dropdown-item">
+              <i class="fa-brands fa-searchengin"></i>
+              <p>SEO</p>
+            </a>
+            <hr />
+            <a href="/" class="dropdown-item">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>Graphic Design</p>
+            </a>
+            <hr />
+            <a href="/" class="dropdown-item">
+              <i class="fa-solid fa-bullhorn"></i>
+              <p>Marketing</p>
+            </a>
+          </div>
+        </div>
+        <a href="/" class="link-hover">Career</a>
+        <hr class="divider" />
+        <i class="fa-solid fa-x close-btn"></i>
+        <div class="crumbles">
+          <a href="/"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="/"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
